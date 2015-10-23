@@ -75,7 +75,7 @@ if (Discourse.SiteSettings.adsense_publisher_code) {
       data["topic-title"]["ad_height"] = parseInt(splitHeightInt(Discourse.SiteSettings.adsense_topic_title_ad_sizes));
     }
     if (Discourse.Mobile.mobileView && Discourse.SiteSettings.adsense_mobile_topic_title_code) {
-      data["topic-above-post-stream"]["ad_mobile_code"] = Discourse.SiteSettings.adsense_mobile_topic_title_code;
+      data["topic-title"]["ad_mobile_code"] = Discourse.SiteSettings.adsense_mobile_topic_title_code;
     }
     if (!Discourse.Mobile.mobileView && Discourse.SiteSettings.adsense_topic_above_suggested_code) {
       data["topic-above-suggested"]["ad_code"] = Discourse.SiteSettings.adsense_topic_above_suggested_code;
