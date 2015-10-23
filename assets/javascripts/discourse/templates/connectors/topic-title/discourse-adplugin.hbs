@@ -1,0 +1,9 @@
+{{#if siteSettings.adsense_topic_title_code}}
+  {{google-adsense placement="topic-title"}}
+{{/if}}
+{{#if siteSettings.dfp_topic_title_code}}
+  {{google-dfp-ad placement="topic-title" refreshOnChange=model.id}}
+{{/if}}
+{{#if siteSettings.amazon_topic_title_src_code}}
+  {{amazon-product-links placement="topic-title"}}
+{{/if}}
